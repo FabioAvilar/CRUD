@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Poor+Story&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Poor Story", cursive;
+}
+
+footer {
+    display: flex;
+    align-items: flex-end;
+    /* height: 10vh; */
+    justify-content: center;
+    color: #fff;
+}
+
+/* HOME PAGE */
+.home {
+    background-color: #14213d;
+    font-size: 2rem;
+}
+
+.homeMain {
+    width: 95vh;
+    height: 85vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.homeTitle {
+    color: #fca311;
+}
+
+.homeP {
+    color: #fff;
+}
+
+.homeSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.homeButton {
+    text-decoration: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.homeButton:hover {
+    background-color: #f9f7f3;
+    color: #c9184a;
+    font-weight: 100;
+    text-decoration: none;
+}
+
+.homeButton1 {
+    background-color: #99d98c;
+}
+
+.homeButton2 {
+    background-color: #00bbf9;
+}
+
+.homeButtons {
+    display: flex;
+    gap: 1rem;
+    text-decoration: none;
+}
+
+/* SEARCH TEAMS */
+.search {
+    background-color: #fdc500;
+}
+
+.searchMain {
+    width: 100vh;
+    height: 90vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.searchTitle {
+    font-size: 4rem;
+    color: #00509d;
+}
+
+.searchForm {
+    display: flex;
+    flex-direction: column-reverse;
+    align-content: center;
+    justify-content: center;
+}
+
+.searchInput {
+    font-size: 2rem;
+    padding: 0.2rem;
+    color: #fbb13c;
+}
+
+.searchButton {
+    font-size: 1.5rem;
+    padding: 0.3rem;
+    cursor: pointer;
+    font-weight: 700;
+    background-color: #00509d;
+    border: solid 3px #003f88;
+    color: #99d98c;
+}
+
+.searchHome {
+    display: flex;
+    justify-content: flex-start;
+    width: 100vh
+}
+
+/* USER TEAMS LIST */
+.background {
+    background-color: #003049;
+}
+
+.nav {
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+     width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: #003f88;
+    box-shadow: 0 1px 4px #344e41c9;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* height: 80vh; */
+    color: #fff;    
+    margin-top: 5rem;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+    align-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.backimg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 2rem;
+    background-color: #edede9;
+}
+
+.userList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    background-color: #dda15e;
+    border-radius: 1rem;
+    gap: 2rem;
+    row-gap: 1rem;
+    padding: 1rem;
+}
+
+.userList p {
+    color: #d62828;
+}
+
+.listBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    list-style: none;
+    color: #fff;
+    text-decoration: none;
+    gap: 1rem;
+    margin: 0 0.2rem;
+}
+
+.listBox:hover {
+    color: #c9184a;
+}
+
+.imgTeams {
+    width: 5.5rem;
+    height: 5.5rem;
+}
+
+/* EDIT USER */
+.table {
+    font-size: 2rem;
+}
+
+.block {
+    display: flex;
+    font-size: 2rem;
+    text-align: center;
+    padding: .5rem;
+    border-radius: .5rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        grid-template-columns: repeat(4, 1fr);
+        margin-top: 5rem;
+    }
+
+    footer {
+        margin-top: 5rem;
+        border-top: 5rem;
+    }
+}

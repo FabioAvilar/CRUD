@@ -1,0 +1,38 @@
+<body class="background">
+    {{!-- <form action="/admin/users/delete" method="POST"> --}}
+        <header>
+            <div>
+                <nav class="nav">
+                    <ul class="listBox">
+                        <li><a class="searchButton" href="/">HOME</a></li>
+                        <li><a class="searchButton" href="/admin/users/new">CREATE TEAM</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <form action="/admin/users/delete" method="POST">
+                <section class="list">
+                    <div class="container">
+                        {{#each users}}
+                        <div class="userList">
+                            <div class="backimg">
+                                <p>{{first_name}} {{country}}</p>
+                                <img class="imgTeams" src="{{profile_picture_url}}" alt="">
+                            </div>
+                            <ul class="listBox">
+                                <li><a class="listBox" type="edit" href="/admin/users/{{id}}/edit">Edit</a></li>
+                                <li><input class="checkbox" type="checkbox" name="users" value="{{id}}"
+                                        id="{{id}}"></input></li>
+                            </ul>
+                        </div>
+                        {{/each}}
+                    </div>
+                    <button class="searchButton deleteTeam" id="deleteTeam" type="submit" disabled>DELETE
+                        TEAM</button>
+                </section>
+            </form>
+        </main>
+
+        <script src="/script.js"></script>
+</body>

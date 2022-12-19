@@ -1,0 +1,47 @@
+<section class="list">
+        {{!-- <form action="/admin/users/{{users.id}}/edit" method="post"> --}}
+            <div class="table">
+                <p>Name</p>
+                <input
+                    class="block"
+                    value="{{user.first_name}}"
+                    type="text"
+                    name="first_name"
+                    id="first_name"
+                    required
+                />
+            </div>
+            <div class="table">
+                <p>Country</p>
+                <input
+                    class="block"
+                    value="{{user.country}}"
+                    type="text"
+                    name="country"
+                    id="country"
+                    required
+                />
+            </div>
+            <div class="table">
+                <p>E-mail</p>
+                <input
+                    class="block"
+                    value="{{user.email}}"
+                    type="text"
+                    id="email"
+                    name="email"
+                />
+            </div>
+            <div class="table">
+                <p>Profile Picture</p>
+                <input
+                    class="block"
+                    value="{{user.profile_picture_url}}"
+                    type="url"
+                    id="user.profile_picture_url"
+                    name="profile_picture_url"
+                    placeholder="Logo Pictures"
+                />
+            </div>
+        {{!-- </form> --}}
+    </section>

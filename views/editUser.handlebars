@@ -1,0 +1,13 @@
+{{! render a form populated with the user information }}
+{{!-- you can do <input name="first_name" value="{{ first_name }}"> --}}
+
+<body class="background">
+    <h1>Edit user</h1>
+    <form action="/admin/users/{{user.id}}/edit" method="POST">
+    {{> edition}}
+        <div class="homeButtons">
+            <button class="homeButton1 homeButton" type="submit">Save Changes</button>
+            <button class="homeButton1 homeButton"><a class="homeButton" href="/admin/users">Go back</a></button>
+        </div>
+    </form>
+</body>

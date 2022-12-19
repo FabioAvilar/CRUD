@@ -1,0 +1,21 @@
+{
+    "name": "crud",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "scripts": {
+        "start": "nodemon server.js",
+        "db": "psql -f setup.sql -d crud"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.18.1",
+        "express-handlebars": "^6.0.6",
+        "spiced-pg": "^1.0.4"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.19"
+    }
+}
